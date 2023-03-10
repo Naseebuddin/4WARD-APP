@@ -3,13 +3,14 @@
     "name": "4WARD",
     "slug": "4WARD",
     "version": "1.0.0",
-    "orientation": "portrait",
+    "orientation": "",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "/Users/naseebuddinzakhil/Desktop/reactnative/4WARD/4WARD/src/assets/image/ic_home_icon.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "size":"92 * 92",
+      "backgroundColor": "#2E2E2E"
     },
     "assetBundlePatterns": [
       "**/*"
