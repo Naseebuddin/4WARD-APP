@@ -7,4 +7,5 @@ export default {
   SETPASSWORD: "SetPassword",
   SIGNUP: "Signup",
   SIGNUPOTP: "SignupOtp",
+
 };
