@@ -1,11 +1,15 @@
 import React from "react";
 import { StyleSheet, Text, TextInput, View } from "react-native";
-import { moderateScale, verticalScale } from "react-native-size-matters";
-
+import colors from "../styles/colors";
 export default InputTextComponent = ({
   placeInput = "",
-  keyboardTypeOfInput ,
+  keyboardTypeOfInput,
   textType,
+  lengthOfInputs,
+  onChangeTextValue,
+  autoFocusOnKeyboard,
+  multilineText,
+  myValueToAdd
 }) => {
   return (
     <View>
@@ -13,10 +17,16 @@ export default InputTextComponent = ({
         style={{
           ...styles.inputStyle,
         }}
+        autoFocus={autoFocusOnKeyboard}
+        maxLength={lengthOfInputs}
         placeholder={placeInput}
-        placeholderTextColor={"rgba(255,255,255,1)"}
+        placeholderTextColor={colors.white}
         keyboardType={keyboardTypeOfInput}
         secureTextEntry={textType}
+        onChangeText={onChangeTextValue}
+        numberOfLines={5}
+        value={myValueToAdd}
+         multiline={multilineText}
       />
     </View>
   );
@@ -25,6 +35,6 @@ const styles = StyleSheet.create({
   inputStyle: {
     fontWeight: "200",
     fontSize: 14,
-    color: "rgba(255,255,255,1)",
+    color: colors.white,
   },
 });

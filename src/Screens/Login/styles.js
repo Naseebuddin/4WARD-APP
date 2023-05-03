@@ -1,9 +1,9 @@
 import { StyleSheet } from "react-native";
-import { scale, verticalScale, moderateScale } from "react-native-size-matters";
-
+import { scale, verticalScale, moderateScale, moderateVerticalScale } from "react-native-size-matters";
+import colors from "../../styles/colors";
 export default style = StyleSheet.create({
   mainViewStyle: {
-    backgroundColor: "rgba(46,46,46,1)",
+    backgroundColor:colors.darkBackground,
     flex: 1,
   },
 secondMainView:{
@@ -15,12 +15,12 @@ secondMainView:{
   },
   welcomeStyle: {
     fontSize: 24,
-    color: "rgba(255,255,255,1)",
+    color: colors.white,
     lineHeight: moderateScale(32),
   },
   WeAreTextStyle: {
     fontSize: 15,
-    color: "rgba(166,166,166,1)",
+    color: colors.darkSilver,
     lineHeight: moderateScale(32),
   },
   CountryNoView: {
@@ -37,14 +37,14 @@ secondMainView:{
     width: scale(104),
     paddingHorizontal: moderateScale(19),
     borderRadius: moderateScale(8),
-    backgroundColor: "rgba(76,76,76,1)",
+    backgroundColor: colors.dark,
   },
   countryTextColor: {
-    color: "rgba(255,255,255,1)",
+    color: colors.white,
   },
   mobileNoView: {
     marginTop: 32,
-    backgroundColor: "rgba(76,76,76,1)",
+    backgroundColor: colors.dark,
     height: verticalScale(48),
     borderRadius: moderateScale(8),
     marginLeft: moderateScale(16),
@@ -58,17 +58,22 @@ secondMainView:{
     width: scale(315),
     flexDirection: "row",
     justifyContent: "space-between",
-    backgroundColor: "rgba(76,76,76,1)",
+    backgroundColor: colors.dark,
     height: verticalScale(48),
     alignItems: "center",
     paddingHorizontal: 20,
     marginHorizontal: 20,
     borderRadius: 8,
   },
+  passwordInputStyle:{
+    width:scale(240)
+
+  },
   showTextColor: {
-    color: "rgba(255,255,255,1)",
+    color: colors.white,
     fontWeight: 200,
     fontSize: 14,
+    width:scale(40)
   },
   useOtpStyle:{
     flexDirection:'row',
@@ -77,16 +82,17 @@ secondMainView:{
     marginTop:16
   },
   useOTPText:{
-    color:'rgba(255,255,255,1)',
+    color:colors.white,
     lineHeight:moderateScale(20),
     fontSize:13
   },
   FORGETPASSWORD:{
-    color:'rgba(50,197,255,1)'
+    color:colors.blue,
   },
   buttonView:{
-    flex:0.3,
-    marginTop:50
+    flex:0.1,
+    marginTop:moderateVerticalScale(220),
+    justifyContent:'flex-end'
   }
   
 });

@@ -1,22 +1,23 @@
 import { StyleSheet } from "react-native";
 import { moderateScale, scale, verticalScale } from "react-native-size-matters";
+import colors from "../../styles/colors";
 export default StyleSheet.create({
   mainView: {
-    backgroundColor: "rgba(46,46,46,1)",
+    backgroundColor: colors.darkBackground,
     flex: 1,
   },
-  secondMainView:{
-    flex:0.9
+  secondMainView: {
+    flex: 0.9,
   },
   createTextStyle: {
-    color: "rgba(255,255,255,1)",
+    color: colors.white,
     fontSize: moderateScale(24),
     lineHeight: moderateScale(32),
     marginHorizontal: moderateScale(24),
     marginTop: moderateScale(16),
   },
   createContinueTextStyle: {
-    color: "rgba(175,175,175,1)",
+    color: colors.silverOneSavenFive,
     fontSize: 15,
     lineHeight: 32,
     marginHorizontal: moderateScale(24),
@@ -30,14 +31,14 @@ export default StyleSheet.create({
   viewOfFirstName: {
     width: scale(146),
     height: verticalScale(48),
-    backgroundColor: "rgba(76,76,76,1)",
+    backgroundColor: colors.dark,
     borderRadius: 8,
     justifyContent: "center",
     paddingLeft: moderateScale(16),
   },
   emailView: {
     width: scale(316),
-    backgroundColor: "rgba(76,76,76,1)",
+    backgroundColor: colors.dark,
     height: verticalScale(48),
     borderRadius: 8,
     marginTop: moderateScale(16),
@@ -58,14 +59,14 @@ export default StyleSheet.create({
     width: scale(102),
     paddingHorizontal: moderateScale(19),
     borderRadius: moderateScale(8),
-    backgroundColor: "rgba(76,76,76,1)",
+    backgroundColor: colors.dark,
   },
   countryTextColor: {
-    color: "rgba(255,255,255,1)",
+    color: colors.white,
   },
   inputMobileNoStyle: {
     marginTop: moderateScale(16),
-    backgroundColor: "rgba(76,76,76,1)",
+    backgroundColor: colors.dark,
     width: scale(200),
     height: verticalScale(48),
     borderRadius: 8,
@@ -74,9 +75,9 @@ export default StyleSheet.create({
     marginRight: moderateScale(16),
     marginLeft: moderateScale(16),
   },
-  buttonView:{
-    alignItems:'center',
-    marginLeft:moderateScale(10),
-    flex:0.2
-  }
+  buttonView: {
+    alignItems: "center",
+    marginLeft: moderateScale(10),
+    flex: 0.2,
+  },
 });

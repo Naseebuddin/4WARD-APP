@@ -1,22 +1,23 @@
 import { StyleSheet } from "react-native";
 import { moderateScale, scale, verticalScale } from "react-native-size-matters";
+import colors from "../../styles/colors";
 export default StyleSheet.create({
   mainView: {
-    backgroundColor: "rgba(46,46,46,1)",
+    backgroundColor: colors.darkBackground,
     flex: 1,
   },
-  secondMainView:{
-    flex:0.9
+  secondMainView: {
+    flex: 0.9,
   },
   enterDigitTextStyle: {
-    color: "rgba(255,255,255,1)",
+    color: colors.white,
     fontSize: moderateScale(24),
     lineHeight: 32,
     marginTop: moderateScale(16),
     marginHorizontal: moderateScale(24),
   },
   editNumberTextStyle: {
-    color: "rgba(50,197,255,1)",
+    color: colors.blue,
     marginHorizontal: moderateScale(24),
     marginTop: moderateScale(8),
   },
@@ -27,7 +28,7 @@ export default StyleSheet.create({
   otpStyle: {
     width: scale(40),
     height: verticalScale(40),
-    backgroundColor: "rgba(76,76,76,1)",
+    backgroundColor: colors.dark,
     alignItems: "center",
     justifyContent: "center",
     borderRadius: 8,
@@ -35,14 +36,13 @@ export default StyleSheet.create({
   },
   resendText: {
     fontSize: 15,
-    color: "rgba(255,255,255,1)",
+    color: colors.white,
     lineHeight: 32,
     marginTop: moderateScale(120),
     marginLeft: moderateScale(24),
-
   },
   buttonViewStyle: {
-    marginTop: moderateScale(380),
+    marginTop: moderateScale(290),
     flex: 0.2,
   },
 });

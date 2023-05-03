@@ -1,15 +1,15 @@
 import { StyleSheet } from "react-native";
 import { moderateScale, scale, verticalScale } from "react-native-size-matters";
+import colors from "../../styles/colors";
 export default StyleSheet.create({
   mainView: {
     flex: 1,
-    backgroundColor: "rgba(46,46,46,1)",
+    backgroundColor: colors.darkBackground,
   },
   secondMainView: {
     flex: 0.9,
     alignItems: "center",
   },
-
   imagestyling: {
     height: verticalScale(178),
     width: scale(133),
@@ -19,20 +19,20 @@ export default StyleSheet.create({
   textStyling: {
     marginHorizontal: moderateScale(22),
     marginTop: moderateScale(54),
-    color: "rgba(156,156,156,1)",
+    color: colors.sliverOneFiveSix,
     fontSize: 13,
     lineHeight: 20,
   },
-  buttonViewStyling:{
-    marginLeft:20,
-    marginTop:moderateScale(24)
+  buttonViewStyling: {
+    marginLeft: 20,
+    marginTop: moderateScale(24),
   },
-  newhereText:{
-    alignSelf:'center',
-    marginTop:moderateScale(500),
-    color:"rgba(255,255,255,1)"
+  newhereText: {
+    alignSelf: "center",
+    marginTop: moderateScale(500),
+    color: colors.white,
   },
-  signupStyle:{
-    color:'rgba(65,204,255,1)'
-  }
+  signupStyle: {
+    color: colors.blue,
+  },
 });

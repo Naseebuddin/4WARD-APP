@@ -31,5 +31,12 @@ export default {
   ic_back_arrow: require("./../assets/image/ic_back_arrow.png"),
   ic_add: require("./../assets/image/ic_add.png"),
   ic_1: require("./../assets/image/ic_1.png"),
-  ic_apple:require("./../assets/image/ic_apple.png"),
+  ic_apple: require("./../assets/image/ic_apple.png"),
+  c: require("./../assets/image/c.png"),
+  cras: require("./../assets/image/cras.png"),
+  adrew: require("./../assets/image/adrew.png"),
+  london: require("./../assets/image/london.png"),
+  london1: require("./../assets/image/london1.png"),
+  europe: require("./../assets/image/europe.png"),
+  one: require("./../assets/image/one.png"),
 };

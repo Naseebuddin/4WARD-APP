@@ -7,5 +7,13 @@ export default {
   SETPASSWORD: "SetPassword",
   SIGNUP: "Signup",
   SIGNUPOTP: "SignupOtp",
-
+  HOME: "Home",
+  VIEWMAP: "ViewMap",
+  TABSROUTES: "TabRoutes",
+  NOTIFICATION: "Notification",
+  APPPROFILE: "APPPROFILE",
+  SEARCHLOCATION: "SearchLocation",
+  GALLARY: "Gallary",
+  EDITPROFILE: "Edit Profile",
+  CHANGEPASSWORD: "ChnagePassword",
 };

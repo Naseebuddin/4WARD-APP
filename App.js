@@ -1,12 +1,29 @@
-import { SafeAreaView, Text, View, StyleSheet } from "react-native";
+import AsyncStorage from "@react-native-async-storage/async-storage";
+import { useEffect } from "react";
+import { View, StyleSheet } from "react-native";
+import { Provider } from "react-redux";
 import Routes from "./src/Navigations/Routs";
+import StateSet from "./src/redux/actions/action";
+import store from "./src/redux/store";
 function App() {
+  useEffect(() => {
+    (async () => {
+      try {
+        const getingItem = await AsyncStorage.getItem("userLogin");
+        const passingItem = JSON.parse(getingItem);
+        // console.log(passingItem, "passing appp");
+        if (passingItem) {
+          StateSet(true);
+        }
+      } catch (e) { }
+    })();  
+  }, []);
   return (
-    <SafeAreaView style={styles.safeAreaViewStyle}>
-      <View style={styles.viewStyle}>
+    <View style={styles.viewStyle}>
+      <Provider store={store}>
         <Routes />
-      </View>
-    </SafeAreaView>
+      </Provider>
+    </View>
   );
 }
 export default App;

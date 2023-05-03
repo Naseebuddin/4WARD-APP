@@ -13,6 +13,6 @@ export default GoBack;
 const styles = StyleSheet.create({
   viewStyle: {
     margin: 10,
-    marginLeft:24
+    marginLeft: 24,
   },
 });
