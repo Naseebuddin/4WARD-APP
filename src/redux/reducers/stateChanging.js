@@ -8,8 +8,8 @@ const stateChanging = createSlice({
  
   },
   reducers: {
-    getLoginStatus: (state, action) => {s  ;
-s
+    getLoginStatus: (state, action) => {
+
       state.status = action.payload;
     },
     getResposne: (state, action) => {

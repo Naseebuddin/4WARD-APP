@@ -18,32 +18,32 @@ import styles from "./styles";
 const SelectLocation = ({ navigation }) => {
   const DATA = [
     {
-      id:1,
+      id: 1,
       address: "Sector 46c Chandigarh",
       imageLocation: imagePath.ic_grey_tick,
     },
     {
-      id:2,
+      id: 2,
       address: "Sector 55, Chandigarh",
       imageLocation: imagePath.ic_grey_tick,
     },
     {
-      id:3,
+      id: 3,
       address: "Sector 44, Chandigarh",
       imageLocation: imagePath.ic_grey_tick,
     },
     {
-      id:4,
+      id: 4,
       address: "Sector 32c Chandigarh",
       imageLocation: imagePath.ic_grey_tick,
     },
     {
-      id:5,
+      id: 5,
       address: "Sector 55, Chandigarh",
       imageLocation: imagePath.ic_grey_tick,
     },
     {
-      id:6,
+      id: 6,
       address: "Sector 22, Mohali",
       imageLocation: imagePath.ic_grey_tick,
     },
@@ -97,13 +97,13 @@ const SelectLocation = ({ navigation }) => {
                 return (
                   <View style={styles.flatListView}>
                     <TouchableOpacity
-                      style={{...styles.flatListStyle,justifyContent:'space-between'}}
+                      style={{ ...styles.flatListStyle, justifyContent: 'space-between' }}
                       onPress={() => selectItem(item.id)}
                     >
                       <Text style={styles.locationTextStyling}>
                         {item.address}
                       </Text>
-                      <Image  source={item.imageLocation} />
+                      <Image source={item.imageLocation} />
                     </TouchableOpacity>
                   </View>
                 );

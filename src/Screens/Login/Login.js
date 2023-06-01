@@ -17,7 +17,6 @@ import colors from "../../styles/colors";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import navigationStrings from "../../constants/navigationStrings";
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view'
-
 const Login = ({ navigation }) => {
   const [passwordShow, setPasswordShow] = useState(true);
   const [hideText, setHideText] = useState(eng.SHOW);
@@ -97,7 +96,6 @@ const Login = ({ navigation }) => {
               topMargine={verticalScale(88)}
               onPressButton={() => {
                 navigation.navigate(navigationStrings.SELECTLOCATIOM)
-                
               }}
             />
           </View>
@@ -108,11 +106,10 @@ const Login = ({ navigation }) => {
   );
 };
 export default Login;
-
-// const setItemData = async (key, value) => {
-//   try {
-//     await AsyncStorage.setItem(key, JSON.stringify(value));
-//   } catch (e) {
-//     console.log("error raised during compile", e);
-//   }
-// };
+const setItemData = async (key, value) => {
+  try {
+    await AsyncStorage.setItem(key, JSON.stringify(value));
+  } catch (e) {
+    console.log("error raised during compile", e);
+  }
+};

@@ -7,7 +7,7 @@ import StateSet from "../../redux/actions/action";
 import imagePath from "./../../constants/imagePath";
 import styles from "./styles";
 export default AppProfiler = ({ navigation }) => {
-  removeItem = (async) => {
+  const removeItem = (async) => {
     AsyncStorage.removeItem("userLogin").then((res) => {
       StateSet(false) 
     });

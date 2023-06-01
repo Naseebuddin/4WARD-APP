@@ -1,13 +1,13 @@
 import {} from "react-native";
 import navigationStrings from "../constants/navigationStrings";
 import {
-  Login,
   Tutorial,
   Signup,
   SignupOtp,
   SetPassword,
   AppLogin,
   SelectLocation,
+  Login,
 } from "../Screens";
 export default function AuthScreen(Stack) {
   return (
